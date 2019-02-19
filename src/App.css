@@ -1,0 +1,54 @@
+/* 웹브라우저 창 전체 영역 서식 */
+body {
+    background-color: #eee; /* 배경색 밝은 회색 */
+    padding: 0px;             /* 내부 여백 */
+    margin: 0px;              /* 외부 여백 */
+    font-size: 14px;          /* 글자 크기 */
+  }
+  
+  /* 웹브라우저 창 가운데, 내용이 출력될 영역 서식 */
+  div#root { 
+    background-color: white; /* 배경색 */
+    height: 100vh;             /* 창과 같은 높이로 설정 */
+    padding: 5px;              /* 내부 여백 */
+    width: 900px;              /* 폭 */
+    margin: auto;              /* 창 중앙에 위치하도록 좌우 여백 설정 */
+  }
+  
+  /* 버튼 서식 설정 */
+  button {
+    outline: none;               /* 버튼 주변에 따로 외곽선을 또 그리지 않는다 */
+    cursor: pointer;             /* 마우스 포인터 손가락 모양으로 설정 */
+    padding: 0.7em 2em 0.7em 2em;  /* 내부 여백: left top right bottom */
+    margin: 5px;                   /* 외부 여백 */
+    border-radius: 0.7em;          /* 경계선 모서리 둥근 정도 설정 */
+    line-height: 1em;              /* 줄 간격 설정. 1em은 현재 폰트 크기. */
+    border-color: #eee;          /* 경계선 색 */
+    border-width: 1px;             /* 경계선 굵기 */
+    background: linear-gradient(#fff, #bbb);  /* 배경을 #fff 색에서 #bbb 색으로 
+                                                점진적으로 변화하는 색으로 설정 */
+  }
+  
+  /* 버튼 위에 마우스가 위치할 때 서식 */
+  button:hover {
+    background: linear-gradient(#fff, #aee);
+  }
+  
+  /* panel 서식 */
+  div.panel {
+    display: inline-block;        /* 가로 방향으로 한 줄을 다 차지하지 않는다 */
+    padding: 30px;                /* 내부 여백 */
+    border: 1px solid #ddd;    /* 경계선 1px 굵기 #ddd 색 실선 */
+    box-shadow: 2px 2px 5px 0px #bbb;  /* 그림자 */
+  }
+  
+  div#App {
+    padding: 20px;  /* 내부 여백 */
+  }
+  
+  /* 모든 table 태그에 서식 적용 */
+  table { border-collapse: collapse; margin-bottom: 10px; }
+  td, th { border: 1px solid #aaa; padding: 5px; }
+  th { background-color: #eee; }
+  tr.clickable:hover { cursor: pointer; background-color: #ffd; }
+  

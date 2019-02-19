@@ -1,0 +1,6 @@
+div#PersonForm table { display: inline-block; }
+div#PersonForm td:nth-child(1) { background-color: #eee; width: 80px; height: 30px; }
+div#PersonForm input[type=text] { margin: 5px; padding: 5px; border: 1px solid #888; width: 200px; }
+div#PersonForm span.separator { display:inline-block; width: 20px; }
+div#PersonForm button { margin: 5px; }
+div#PersonForm button { margin-top: 20px; }
